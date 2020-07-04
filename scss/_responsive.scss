@@ -1,0 +1,45 @@
+@include xl {
+  body {
+    margin-top: 1em;
+  }
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .menu {
+    visibility: hidden;
+    overflow: hidden;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  .navbar {
+    position: relative;
+    background: #181719;
+    width: 100px;
+    visibility: visible;
+  }
+
+  .list {
+    position: absolute;
+    bottom: 1rem;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+  }
+
+  .link {
+    display: inline-block;
+    padding: 1em 1em 0 1em;
+    position: relative;
+    font-size: 1.5rem;
+  }
+}
