@@ -1,11 +1,12 @@
 @import "./variables";
 @import "./navbar";
 @import "./responsive";
+@import "./collection";
 
 .container {
   width: 90%;
   margin: 0 auto;
-  max-width: 850px;
+  max-width: 1240px;
 }
 
 .wrapper {
