@@ -42,4 +42,14 @@
     position: relative;
     font-size: 1.5rem;
   }
+
+  .contact__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #about {
+    margin-top: 5em;
+  }
 }

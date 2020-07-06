@@ -177,7 +177,7 @@ li {
   height: 2px;
   bottom: 0;
   left: 0;
-  background: powderblue;
+  background: orangered;
   -webkit-transform-origin: right;
           transform-origin: right;
   -webkit-transition: all 300ms ease-in;
@@ -248,6 +248,20 @@ li {
     position: relative;
     font-size: 1.5rem;
   }
+  .contact__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #about {
+    margin-top: 5em;
+  }
 }
 
 #collection {
@@ -257,8 +271,9 @@ li {
 }
 
 #collection h1 {
-  padding: 1em 0 1em 1em;
+  padding: 1em;
   text-align: justify;
+  text-transform: uppercase;
 }
 
 .collection__item {
@@ -282,6 +297,16 @@ li {
   -ms-grid-row: 1;
   -ms-grid-row-span: 1;
   grid-row: 1/2;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: all 300ms ease-in;
+  transition: all 300ms ease-in;
+}
+
+.img_collection1:hover {
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
+  opacity: 0.5;
 }
 
 .img_collection2 {
@@ -291,11 +316,14 @@ li {
   -ms-grid-row: 2;
   -ms-grid-row-span: 2;
   grid-row: 2/4;
+  -webkit-transition: all 300ms ease-in;
+  transition: all 300ms ease-in;
 }
 
-.img_collection2 img:hover {
-  -webkit-filter: grayscale(100%);
-          filter: grayscale(100%);
+.img_collection2:hover {
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
+  opacity: 0.5;
 }
 
 .img_collection6 {
@@ -305,21 +333,137 @@ li {
   -ms-grid-row: 1;
   -ms-grid-row-span: 2;
   grid-row: 1/3;
+  -webkit-transition: all 300ms ease-in;
+  transition: all 300ms ease-in;
+}
+
+.img_collection6:hover {
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
+  opacity: 0.5;
 }
 
 .img_collection5 {
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-column: 1/3;
-  -ms-grid-row: 2;
+  -ms-grid-row: 3;
   -ms-grid-row-span: 2;
-  grid-row: 2/4;
+  grid-row: 3/5;
+  -webkit-transition: all 300ms ease-in;
+  transition: all 300ms ease-in;
+}
+
+.img_collection5:hover {
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
+  opacity: 0.5;
 }
 
 .img_collection4 {
   -ms-grid-column: 3;
   -ms-grid-column-span: 2;
   grid-column: 3/5;
+  -webkit-transition: all 300ms ease-in;
+  transition: all 300ms ease-in;
+}
+
+.img_collection4:hover {
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
+  opacity: 0.5;
+}
+
+.contact {
+  margin-top: 5em;
+}
+
+.contact a {
+  font-size: 1rem;
+  display: inline-block;
+}
+
+.contact__content {
+  line-height: 1.7;
+}
+
+.contact .address {
+  margin: 2em 0;
+}
+
+.contact .address .btn {
+  position: relative;
+  display: inline-block;
+  font-size: 1rem;
+  color: white;
+  -webkit-transition: all 300ms ease-in;
+  transition: all 300ms ease-in;
+}
+
+.contact .address .btn::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 2px;
+  background: orangered;
+  bottom: 0;
+  left: 0;
+  -webkit-transition: all 300ms ease-in;
+  transition: all 300ms ease-in;
+}
+
+.contact .address .btn:hover::after {
+  background: #181719;
+}
+
+.contact .post {
+  margin: 2em 0;
+  padding: 1em 0;
+}
+
+.contact .follow {
+  margin: 2em 0;
+}
+
+.contact .follow .btn {
+  position: relative;
+  display: inline-block;
+  font-size: 1rem;
+  color: white;
+  margin-bottom: 0.5em;
+  -webkit-transition: all 300ms ease-in;
+  transition: all 300ms ease-in;
+}
+
+.contact .follow .btn::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 2px;
+  background: orangered;
+  bottom: 0;
+  left: 0;
+  -webkit-transition: all 300ms ease-in;
+  transition: all 300ms ease-in;
+}
+
+.contact .follow .btn:hover::after {
+  background: #181719;
+}
+
+.about__content {
+  max-width: 600px;
+}
+
+.about__content h1 {
+  padding: 1em 0;
+}
+
+footer {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  text-align: center;
 }
 
 .container {
@@ -370,7 +514,7 @@ li {
   content: "";
   width: 0;
   height: 2px;
-  background: powderblue;
+  background: orangered;
   bottom: 0;
   left: 0;
   -webkit-transition: all 300ms ease-in;
