@@ -15,7 +15,7 @@
       position: relative;
       display: inline-block;
       font-size: 1rem;
-      color: white;
+
       @include transition1;
       &::after {
         position: absolute;
@@ -42,7 +42,6 @@
       position: relative;
       display: inline-block;
       font-size: 1rem;
-      color: white;
       margin-bottom: 0.5em;
       @include transition1;
       &::after {

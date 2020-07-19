@@ -7,6 +7,15 @@
     justify-content: space-between;
   }
 
+  .main__content {
+    h1 {
+      font-size: 5.5rem;
+    }
+    p {
+      font-size: 1.75rem;
+    }
+  }
+
   .menu {
     visibility: hidden;
     overflow: hidden;
